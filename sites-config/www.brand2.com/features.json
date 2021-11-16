@@ -1,0 +1,44 @@
+{
+  "templateVersion": 8,
+  "features": [
+    {
+      "name": "Products",
+      "streamId": "products",
+      "templateType": "SOY",
+      "entityPageSet": {
+        "htmlTemplate": "locationEntity.yexter",
+        "urlTemplate": "url.yexter"
+      }
+    },
+    {
+      "name": "Landing Page",
+      "templateType": "SOY",
+      "staticPage": {
+        "urlTemplate": "url.landing",
+        "htmlTemplate": "landing.layout"
+      }
+    }
+  ],
+  "streams": [
+    {
+      "$id": "products",
+      "source": "knowledgeGraph",
+      "destination": "pages",
+      "fields": [
+        "name",
+        "meta",
+        "id",
+        "uid"
+      ],
+      "filter": {
+        "entityTypes": [
+          "product"
+        ]
+      },
+      "localization": {
+        "locales": ["en"],
+        "primary": false
+      }
+    }
+  ]
+}
