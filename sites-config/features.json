@@ -28,7 +28,8 @@
         "name",
         "meta",
         "id",
-        "uid"
+        "uid",
+        "slug"
       ],
       "filter": {
         "entityTypes": [
