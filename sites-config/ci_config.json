@@ -18,7 +18,7 @@
         "requiredFiles": []
     },
     "buildArtifacts": {
-        "build_setup_cmd": "npm install",
+        "build_setup_cmd": "yarn --version; npm install",
         "build_cmd": "npm run build"
     },
     "livePreview": {
